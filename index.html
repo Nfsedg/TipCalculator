@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tip calculator with css/sass, javacript vanilla and html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/compiler/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header class="header">SPLI<br>TTER</header>
+        <div class="container">
+            <section class="bill">
+                <p class="bill__title">Bill</p>
+                <div class="bill__input">
+                    <span></span>
+                    <input type="number" placeholder="0">
+                </div>
+            </section>
+            <section class="tips">
+                <p class="tips__title">Select Tip %</p>
+                <form class="tips__buttons-contaier">
+                    <button type="button" class="tips__btn">5%</button>
+                    <button type="button" class="tips__btn">10%</button>
+                    <button type="button" class="tips__btn">15%</button>
+                    <button type="button" class="tips__btn">25%</button>
+                    <button type="button" class="tips__btn">50%</button>
+                    <input type="number" placeholder="Custom" class="tips__btn tips__btn--input">
+                </form>
+            </section>
+            <section class="people-count">
+                <p class="people-count__title">Number of People</p>
+                <div class="people-count__input">
+                    <span></span>
+                    <input type="number" placeholder="0">
+                </div>
+            </section>
+            <section class="totalcount">
+                <article class="totalcount__amount">
+                    <div>
+                        <p>Tip Amount</p>
+                        <p>/ person</p>
+                    </div>
+                    <div>$4.27</div>
+                </article>
+                <article class="totalcount__total">
+                    <div>
+                        <p>Total</p>
+                        <p>/ person</p>
+                    </div>
+                    <div>$34.27</div>
+                </article>
+                <button class="totalcount__btn">RESET</button>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,9 @@
+.bill {
+    width: 100%;
+    &__input {
+        @include main-input;
+        span {
+            background-image: url('../../../images/icon-dollar.svg');
+        }
+    }
+}

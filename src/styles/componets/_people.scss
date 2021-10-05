@@ -1,0 +1,9 @@
+.people-count {
+    &__input {
+        @include main-input;
+        span {
+            background-image: url('../../../images/icon-person.svg');
+        }
+    }
+    padding-bottom: 30px;
+}
