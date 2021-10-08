@@ -4,7 +4,7 @@
         font-size: 14px;
         text-align: left;
     }
-    &__buttons-container {
+    &__buttons-contaier {
         display: grid;
         justify-content: center;
         align-items: center;
@@ -12,8 +12,8 @@
         grid-template-rows: 1fr 1fr 1fr;
     }
     &__btn {
-        @include button;
         margin: 5px;
+        @include button;
         &--input {
             background-color: $input-color;
             text-align: right;

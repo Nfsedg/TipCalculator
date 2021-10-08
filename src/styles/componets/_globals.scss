@@ -14,13 +14,12 @@ $main-font: 'Space Mono', monospace;
  }
 
 @mixin button {
-    width: 45%;
+    width: 95%;
     height: 50px;
     background-color: $dark-color;
     font-size: 20px;
     font-weight: 700;
     color: $white-color;
-    background-color: $dark-color;
     border-radius: 5px;
     border: none;
     font-family: $main-font;

@@ -2,19 +2,42 @@
     background-color: $dark-color;
     border-radius: 10px;
     padding: 20px;
+    p {
+        color: $white-color;
+        font-weight: 500;
+        line-height: 8px;
+        margin-bottom: 20px;
+    }
+    p:nth-child(2) {
+        color: $darkcolor-font;
+        font-size: 14px;
+    }
     &__amount {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        div:nth-child(2){
+            font-weight: 700;
+            color: $onclick-color;
+            font-size: 28px;
+        }
     }
     &__total{
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        font-weight: 700;
+        color: $onclick-color;
+        div:nth-child(2){
+            font-weight: 700;
+            color: $onclick-color;
+            font-size: 28px;
+        }
     }
     &__btn {
+        margin-top: 20px;
         @include button;
         background-color: $onclick-color;
         width: 100%;

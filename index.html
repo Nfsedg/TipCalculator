@@ -19,45 +19,47 @@
                 <p class="bill__title">Bill</p>
                 <div class="bill__input">
                     <span></span>
-                    <input type="number" placeholder="0">
+                    <input type="number" placeholder="0" id="inputBill">
                 </div>
             </section>
             <section class="tips">
                 <p class="tips__title">Select Tip %</p>
                 <form class="tips__buttons-contaier">
-                    <button type="button" class="tips__btn">5%</button>
-                    <button type="button" class="tips__btn">10%</button>
-                    <button type="button" class="tips__btn">15%</button>
-                    <button type="button" class="tips__btn">25%</button>
-                    <button type="button" class="tips__btn">50%</button>
-                    <input type="number" placeholder="Custom" class="tips__btn tips__btn--input">
+                    <button type="button" class="tips__btn" id="tip5">5%</button>
+                    <button type="button" class="tips__btn" id="tip10">10%</button>
+                    <button type="button" class="tips__btn" id="tip15">15%</button>
+                    <button type="button" class="tips__btn" id="tip25">25%</button>
+                    <button type="button" class="tips__btn" id="tip50">50%</button>
+                    <input type="number" placeholder="Custom" class="tips__btn tips__btn--input" id="tipCustom">
                 </form>
             </section>
             <section class="people-count">
                 <p class="people-count__title">Number of People</p>
                 <div class="people-count__input">
                     <span></span>
-                    <input type="number" placeholder="0">
+                    <input type="number" value="1" id="peopleInput">
                 </div>
             </section>
             <section class="totalcount">
                 <article class="totalcount__amount">
                     <div>
                         <p>Tip Amount</p>
-                        <p>/ person</p>
+                        <p>/ per person</p>
                     </div>
-                    <div>$4.27</div>
+                    <div id="totalPerson">$0.00</div>
                 </article>
                 <article class="totalcount__total">
                     <div>
-                        <p>Total</p>
-                        <p>/ person</p>
+                        <p>Total Tip</p>
+                        <p>/ all person</p>
                     </div>
-                    <div>$34.27</div>
+                    <div id="totalAmount">$0.00</div>
                 </article>
-                <button class="totalcount__btn">RESET</button>
+                <button class="totalcount__btn" id="reset">RESET</button>
             </section>
         </div>
     </main>
+    <script src="./src/components/TipCalculator.js"></script>
+    <script src="./src/main.js" type="module"></script>
 </body>
 </html>

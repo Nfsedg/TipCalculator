@@ -90,7 +90,7 @@ section > p {
   font-size: 14px;
   text-align: left;
 }
-.tips__buttons-container {
+.tips__buttons-contaier {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -98,17 +98,16 @@ section > p {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .tips__btn {
-  width: 45%;
+  margin: 5px;
+  width: 95%;
   height: 50px;
   background-color: #00494d;
   font-size: 20px;
   font-weight: 700;
   color: white;
-  background-color: #00494d;
   border-radius: 5px;
   border: none;
   font-family: "Space Mono", monospace;
-  margin: 5px;
 }
 .tips__btn--input {
   background-color: #f4fafa;
@@ -155,26 +154,48 @@ section > p {
   border-radius: 10px;
   padding: 20px;
 }
+.totalcount p {
+  color: white;
+  font-weight: 500;
+  line-height: 8px;
+  margin-bottom: 20px;
+}
+.totalcount p:nth-child(2) {
+  color: #5e7a7d;
+  font-size: 14px;
+}
 .totalcount__amount {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.totalcount__amount div:nth-child(2) {
+  font-weight: 700;
+  color: #26c0ab;
+  font-size: 28px;
+}
 .totalcount__total {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-weight: 700;
+  color: #26c0ab;
+}
+.totalcount__total div:nth-child(2) {
+  font-weight: 700;
+  color: #26c0ab;
+  font-size: 28px;
 }
 .totalcount__btn {
-  width: 45%;
+  margin-top: 20px;
+  width: 95%;
   height: 50px;
   background-color: #00494d;
   font-size: 20px;
   font-weight: 700;
   color: white;
-  background-color: #00494d;
   border-radius: 5px;
   border: none;
   font-family: "Space Mono", monospace;
