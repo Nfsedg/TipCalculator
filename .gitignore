@@ -12,6 +12,7 @@
 *.xd
 
 # Avoid your project being littered with annoying .DS_Store files!
+/node_modules
 .DS_Store
 .prettierignore
 /design
@@ -19,3 +20,4 @@ README-template.md
 style-guide.md
 README.md
 sample.html
+package-lick.json
