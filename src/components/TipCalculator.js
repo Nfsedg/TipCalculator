@@ -44,10 +44,8 @@ class TipCalculator {
         if(this.people !== 0) {
             const dividedAmount = this.divideTip(this.people, total);
             this.totalPerson.innerText = '$' + dividedAmount;
-            console.log(dividedAmount)
         }
 
-        console.log(total.toFixed(2))
         this.totalAmount.innerText = '$' + total.toFixed(2)
 
     }
