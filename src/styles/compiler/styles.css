@@ -28,6 +28,15 @@ main {
   background-color: #c5e4e7;
   padding-top: 50px;
 }
+@media only screen and (min-width: 1440px) {
+  main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 main .header {
   text-align: center;
   font-size: 26px;
@@ -42,6 +51,17 @@ main .header {
   background-color: white;
   border-radius: 30px 30px 0 0;
 }
+@media only screen and (min-width: 1440px) {
+  .container {
+    gap: 20px;
+    border-radius: 30px;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas: "bill total" "tips total" "peop total";
+  }
+}
 
 section > p {
   color: #5e7a7d;
@@ -52,6 +72,11 @@ section > p {
 
 .bill {
   width: 100%;
+}
+@media only screen and (min-width: 1440px) {
+  .bill {
+    grid-area: bill;
+  }
 }
 .bill__input {
   height: 40px;
@@ -86,6 +111,11 @@ section > p {
 .tips {
   width: 100%;
 }
+@media only screen and (min-width: 1440px) {
+  .tips {
+    grid-area: tips;
+  }
+}
 .tips__title {
   font-size: 14px;
   text-align: left;
@@ -118,6 +148,11 @@ section > p {
 
 .people-count {
   padding-bottom: 30px;
+}
+@media only screen and (min-width: 1440px) {
+  .people-count {
+    grid-area: peop;
+  }
 }
 .people-count__input {
   height: 40px;
@@ -154,6 +189,12 @@ section > p {
   border-radius: 10px;
   padding: 20px;
 }
+@media only screen and (min-width: 1440px) {
+  .totalcount {
+    grid-area: total;
+    padding: 40px;
+  }
+}
 .totalcount p {
   color: white;
   font-weight: 500;
@@ -163,6 +204,7 @@ section > p {
 .totalcount p:nth-child(2) {
   color: #5e7a7d;
   font-size: 14px;
+  margin: 0 0 40px 0;
 }
 .totalcount__amount {
   width: 100%;
@@ -202,6 +244,11 @@ section > p {
   background-color: #26c0ab;
   width: 100%;
   color: #00494d;
+}
+@media only screen and (min-width: 1440px) {
+  .totalcount__btn {
+    margin-top: 200px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

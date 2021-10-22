@@ -1,5 +1,8 @@
 .tips {
     width: 100%;
+    @include media(desktop) {
+        grid-area: tips;
+    }
     &__title {
         font-size: 14px;
         text-align: left;

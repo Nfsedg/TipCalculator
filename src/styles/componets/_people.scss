@@ -1,4 +1,7 @@
 .people-count {
+    @include media(desktop) {
+        grid-area: peop;
+    }
     &__input {
         @include main-input;
         span {

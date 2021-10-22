@@ -1,4 +1,7 @@
 .bill {
+    @include media(desktop) {
+        grid-area: bill;
+    }
     width: 100%;
     &__input {
         @include main-input;

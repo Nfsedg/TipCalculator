@@ -2,6 +2,10 @@
     background-color: $dark-color;
     border-radius: 10px;
     padding: 20px;
+    @include media(desktop) {
+        grid-area: total;
+        padding: 40px;
+    }
     p {
         color: $white-color;
         font-weight: 500;
@@ -11,6 +15,7 @@
     p:nth-child(2) {
         color: $darkcolor-font;
         font-size: 14px;
+        margin: 0 0 40px 0;
     }
     &__amount {
         width: 100%;
@@ -42,5 +47,8 @@
         background-color: $onclick-color;
         width: 100%;
         color: $dark-color;
+        @include media(desktop) {
+            margin-top: 200px;
+        }
     }
 }
